@@ -1,20 +1,29 @@
-import Navbar from "./Navbar"
+import React from 'react';
+import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 
-interface HeaderProps {
-  children?: React.ReactNode;
+interface Props {
+  children: React.ReactNode;
 }
 
-const Header = ({ children }: HeaderProps) => {
+const App: React.FC<Props> = ({ children }) => {
   return (
-    <>
-      <header className="container mx-auto">
+    <div className="flex h-screen">
+      {/* Sidebar */}
+      <Sidebar />
+
+      {/* Main Content */}
+      <div className="flex flex-col flex-1">
+        {/* Navbar */}
         <Navbar />
-      </header>
-      <main className="container mx-auto lg:px-6">
-        {children}
-      </main>
-    </>
-  )
+
+        {/* Content Area */}
+        <main className="flex-1 p-6 bg-gray-100">
+          {children}
+        </main>
+      </div>
+    </div>
+  );
 };
 
-export default Header;
+export default App;
