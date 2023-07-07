@@ -53,27 +53,13 @@ const App: React.FC = () => {
       {token ? (
         <div className="container mx-auto py-4">
           <h1 className="text-2xl font-bold mb-4">Create Form</h1>
+          {/* Bikinkan sebuah form untuk input data dari front end ke database */}
           <form onSubmit={handleSubmit}>
-            {fields.map((field: any) => (
-              <div key={field.id} className="mb-4">
-                <label htmlFor={field.name} className="block font-medium mb-1">
-                  {field.label}
-                </label>
-                <input
-                  type={field.type}
-                  id={field.name}
-                  name={field.name}
-                  className="w-full p-2 border border-gray-300 rounded"
-                  onChange={handleInputChange}
-                />
-              </div>
-            ))}
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-            >
-              Submit
-            </button>
+            <label htmlFor="jenis">Jenis</label>
+            <input id="jenis" type="text" placeholder="Jenis" />
+            <label htmlFor="desc">Description</label>
+            <input id="desc" type="text" placeholder="Description" />
+            <button type="submit">Submit</button>
           </form>
         </div>
       ) : (
