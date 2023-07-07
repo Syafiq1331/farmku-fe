@@ -4,7 +4,6 @@ import Header from '../components/Header';
 
 interface DataItem {
   field: ReactNode;
-  id: number;
   user: ReactNode;
 }
 
