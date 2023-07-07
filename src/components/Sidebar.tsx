@@ -17,11 +17,11 @@ const Sidebar: React.FC = () => {
         <Link to="/">
           <li className='text-gray-100/80 hover:text-white'>Home</li>
         </Link>
-        <Link to="/detail">
-          <li className='text-gray-100/80 hover:text-white'>Detail</li>
+        <Link to="/manage-field">
+          <li className='text-gray-100/80 hover:text-white'>Manage Field</li>
         </Link>
-        <Link to="/profile">
-          <li className='text-gray-100/80 hover:text-white'>Profile</li>
+        <Link to="/manage-user">
+          <li className='text-gray-100/80 hover:text-white'>Manage User</li>
         </Link>
         <Link to="/logout">
           <li className='text-gray-100/80 hover:text-white'>Logout</li>

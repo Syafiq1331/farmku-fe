@@ -20,7 +20,7 @@ const Login: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://farmku.syafiqrzf.my.id/api/login", { email, password }, {
+      const response = await axios.post("http://127.0.0.1:8000/api/login", { email, password }, {
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json",
