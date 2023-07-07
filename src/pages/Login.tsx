@@ -58,16 +58,6 @@ const Login: React.FC = () => {
         </figure>
         <hr className="mb-4 w-12 mx-auto bg-sky-500 h-1" />
 
-        {/* {
-          email === "" || password === "" ? (
-            <div className="toast toast-top toast-center">
-              <div className="alert alert-success text-white">
-                <span>Message sent successfully.</span>
-              </div>
-            </div>
-          ) : null
-        } */}
-
         <form onSubmit={handleSubmit} className="w-full max-w-sm">
           <div className="mb-4">
             <label className="block text-slate-800 text-sm font-bold mb-2" htmlFor="email">
